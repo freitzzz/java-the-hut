@@ -4,15 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="freitzzz.yourownsoundboard.MainActivity">
+    android:background="@drawable/background"
+    tools:context="freitzzz.yourownsoundboard.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <Button
+        android:id="@+id/make"
+        android:layout_width="168dp"
+        android:layout_height="110dp"
+        android:background="@drawable/make"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="167dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
+    <Button
+        android:id="@+id/load"
+        android:layout_width="174dp"
+        android:layout_height="117dp"
+        android:background="@drawable/load"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/about"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="89dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="103dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/make"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="164dp"
+        android:layout_height="114dp"
+        android:background="@drawable/about"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="85dp"
+        app:layout_constraintTop_toBottomOf="@+id/make"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
 </android.support.constraint.ConstraintLayout>
