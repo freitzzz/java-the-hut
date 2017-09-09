@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
         make.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Open maker
+                startActivity(new Intent(MainActivity.this,Make.class));
             }
         });
         load.setOnClickListener(new View.OnClickListener() {
